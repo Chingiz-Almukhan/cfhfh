@@ -33,7 +33,7 @@ from tracker.models.issue_tracker import IssueTracker
 #         return render(request, 'edit_task.html', context={'form': form})
 
 class EditView(UpdateView):
-    template_name = "../../templates/edit_task.html"
+    template_name = "edit_task.html"
     form_class = AddEditForm
     model = IssueTracker
     success_url = reverse_lazy('main')

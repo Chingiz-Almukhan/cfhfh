@@ -13,6 +13,6 @@ from tracker.models.issue_tracker import IssueTracker
 #         return context
 
 class TaskView(DetailView):
-    template_name = '../../templates/task_view.html'
+    template_name = 'task_view.html'
     model = IssueTracker
     context_object_name = 'task'

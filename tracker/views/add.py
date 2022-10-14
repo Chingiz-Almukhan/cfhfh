@@ -23,7 +23,7 @@ from tracker.models import IssueTracker
 #         return redirect('main')
 
 class AddView(CreateView):
-    template_name = '../../templates/add_task.html'
+    template_name = 'add_task.html'
     success_url = reverse_lazy('main')
     model = IssueTracker
     form_class = AddEditForm

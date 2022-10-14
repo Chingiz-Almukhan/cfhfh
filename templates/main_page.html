@@ -6,7 +6,7 @@
         <div class="col-12">
             <a href="{% url 'add' %}" type="submit" class="btn btn-primary">Добавить</a>
         </div>
-        {% include 'partial/partial/search.html' %}
+        {% include 'partial/search.html' %}
     </form>
     <table class="table mb-4">
         <thead>
@@ -32,6 +32,6 @@
         </tbody>
     </table>
     {% if is_paginated %}
-        {% include 'partial/partial/pagination.html' %}
+        {% include 'partial/pagination.html' %}
     {% endif %}
 {% endblock %}

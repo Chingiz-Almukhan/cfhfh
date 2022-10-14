@@ -18,7 +18,7 @@ from django.db.models import Q
 
 
 class IndexView(ListView):
-    template_name = '../../templates/main_page.html'
+    template_name = 'main_page.html'
     model = IssueTracker
     context_object_name = 'articles'
     paginate_by = 3
